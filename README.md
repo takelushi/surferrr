@@ -19,18 +19,28 @@ google-chrome --version | awk '{print $3}'
 ### Browser Automation
 
 ```python
-import chromedriver_binary  # noqa: F401
+import chromedriver_binary
 
 from surferrr import Chrome
 
-arguments = ['window-size=1920,1080']
-with Chrome(headless=True, arguments=arguments) as browser:
+with Chrome() as browser:
     browser.access('http://google.com')
     browser.type_text('//form//input[@type="text"]', 'Python')
     browser.submit('//form')
     browser.capture('./capture.png')
 ```
 
+### (Headless) Browser Automation
+
+```python
+import chromedriver_binary
+
+from surferrr import Chrome
+
+arguments = ['window-size=1920,1080']
+with Chrome(headless=True, arguments=arguments) as browser:
+    ...
+```
 ## Development
 
 ```sh
