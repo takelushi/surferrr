@@ -26,9 +26,9 @@ class Chrome(BaseBrowser):
             driver_path (str, optional): Driver path.
             arguments (List[str], optional): Arguments.
         """
+        super().__init__(binary_path=binary_path, arguments=arguments)
         self.headless = headless
         self.driver_path = driver_path if driver_path else 'chromedriver'
-        super().__init__(binary_path=binary_path, arguments=arguments)
         if self.headless:
             self.arguments.append(ARGUMENT_HEADLESS)
 

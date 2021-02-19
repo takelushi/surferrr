@@ -23,7 +23,8 @@ import chromedriver_binary  # noqa: F401
 
 from surferrr import Chrome
 
-with Chrome(headless=False) as browser:
+arguments = ['window-size=1920,1080']
+with Chrome(headless=True, arguments=arguments) as browser:
     browser.access('http://google.com')
     browser.type_text('//form//input[@type="text"]', 'Python')
     browser.submit('//form')
