@@ -1,0 +1,15 @@
+[flake8]
+ignore = H601
+per-file-ignores=
+   **/__init__.py:ABS101
+
+# flake8-quotes
+inline-quotes = single
+multiline-quotes = double
+
+# flake8-import-order
+application-import-names = surferrr
+import-order-style = google
+
+# flake8-coding
+no-accept-encodings = True

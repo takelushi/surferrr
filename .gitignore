@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+.coverage
+.python-version
+
+# Build folder
+dist/
+
+# Editor
+.vscode/
+
+# Reporting
+report/
+
+# Temporary
+tmp/
