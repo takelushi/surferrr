@@ -7,6 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.7"
+selenium = ">=3"
 
 [tool.poetry.dev-dependencies]
 yapf = "^0.30.0"
@@ -52,6 +53,7 @@ flake8-string-format = "^0.3.0"
 pep8-naming = "^0.11.1"
 pytest-cov = "^2.11.1"
 pytest-html = "^3.1.1"
+chromedriver-binary = "88.0.4324.96.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

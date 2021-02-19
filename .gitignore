@@ -11,3 +11,6 @@ dist/
 
 # Reporting
 report/
+
+# Temporary
+tmp/
